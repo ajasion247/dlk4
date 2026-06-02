@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e6f0ff;
+}
+
+.container{
+    width:850px;
+    height:500px;
+    display:flex;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.left{
+    width:50%;
+}
+
+.left img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:80%;
+}
+
+.login-box h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.input-box{
+    margin-bottom:15px;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.remember{
+    margin-bottom:20px;
+}
+
+.btn{
+    text-align:center;
+}
+
+.btn button{
+    width:150px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#007bff;
+    color:white;
+    cursor:pointer;
+}
+
+.btn button:hover{
+    background:#0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Side Image -->
+    <div class="left">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="Login Image">
+    </div>
+
+    <!-- Right Side Login Form -->
+    <div class="right">
+        <div class="login-box">
+            <h2>Login</h2>
+
+            <form>
+                <div class="input-box">
+                    <input type="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Enter Password" required>
+                </div>
+
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
